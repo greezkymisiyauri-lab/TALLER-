@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPLA | Universidad Peruana Los Andes</title>
+    <meta name="description" content="Una experiencia web creativa y única diseñada con HTML, CSS y JavaScript.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Personalizado -->
+    <div class="cursor-follower"></div>
+
+    <!-- Fondo Interactivo -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <nav id="main-nav">
+            <div class="logo">UPLA<span>.EDU</span></div>
+            <ul>
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#profile" class="nav-link">Perfil</a></li>
+                <li><a href="#tech" class="nav-link">Git & GitHub</a></li>
+                <li><a href="#works" class="nav-link">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="reveal-text">Taller de<br><span>Desarrollo de</span><br>Aplicaciones</h1>
+                <p class="fade-in">Explorando nuevas dimensiones en la creación de software.</p>
+                <div class="cta-container">
+                    <a href="#about" class="btn-primary magnetic">Descubrir</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="content-section">
+            <div class="glass-card reveal">
+                <div class="profile-header">
+                    <div class="profile-img"></div>
+                    <div>
+                        <h2>Chanco Misiyauri Greezky Esnyridrd</h2>
+                        <p class="subtitle">Desarrollador de Aplicaciones & Arquitecto Digital</p>
+                    </div>
+                </div>
+                <p>Apasionado por la intersección entre el diseño visual y el rendimiento técnico. Me especializo en crear interfaces que no solo funcionan, sino que cuentan una historia.</p>
+            </div>
+        </section>
+
+        <section id="tech" class="tech-section">
+            <div class="section-title reveal">
+                <h2>Control de <span>Versiones</span></h2>
+            </div>
+            
+            <div class="tech-content-container">
+                <!-- Detalle Git -->
+                <div class="tech-detail-card glass-card reveal">
+                    <div class="tech-header">
+                        <span class="tech-icon">GIT</span>
+                        <h3>Git: El Estándar de la Industria</h3>
+                    </div>
+                    <div class="tech-body">
+                        <p>Git es un sistema de control de versiones distribuido, lo que significa que cada desarrollador tiene una copia completa del historial del proyecto en su máquina local.</p>
+                        
+                        <div class="tech-sub-grid">
+                            <div class="tech-feature">
+                                <h4>Eficiencia en Ramas</h4>
+                                <p>Crea, fusiona y elimina ramas en segundos para experimentar sin riesgo.</p>
+                            </div>
+                            <div class="tech-feature">
+                                <h4>Integridad de Datos</h4>
+                                <p>Cada cambio es rastreado con un hash criptográfico único (SHA-1).</p>
+                            </div>
+                        </div>
+
+                        <div class="command-box">
+                            <p class="label">Comandos Esenciales:</p>
+                            <code>git init</code> - Inicializa un repo.<br>
+                            <code>git add .</code> - Prepara cambios.<br>
+                            <code>git commit -m "msj"</code> - Guarda cambios.<br>
+                            <code>git branch</code> - Gestiona ramas.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detalle GitHub -->
+                <div class="tech-detail-card glass-card reveal">
+                    <div class="tech-header">
+                        <span class="tech-icon">GH</span>
+                        <h3>GitHub: Colaboración Global</h3>
+                    </div>
+                    <div class="tech-body">
+                        <p>GitHub es la plataforma de alojamiento en la nube líder que potencia la colaboración mediante herramientas de gestión de proyectos y automatización.</p>
+                        
+                        <ul class="tech-list">
+                            <li><strong>Pull Requests:</strong> Facilita la revisión de código por pares.</li>
+                            <li><strong>GitHub Actions:</strong> Automatiza CI/CD directamente en el repo.</li>
+                            <li><strong>Issues:</strong> Rastreo eficiente de errores y nuevas funciones.</li>
+                            <li><strong>GitHub Pages:</strong> Despliegue estático gratuito para proyectos.</li>
+                        </ul>
+
+                        <div class="command-box">
+                            <p class="label">Flujo Remoto:</p>
+                            <code>git remote add origin URL</code><br>
+                            <code>git push -u origin main</code><br>
+                            <code>git pull origin main</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="grid-section">
+            <div class="section-title reveal">
+                <h2>Mis <span>Unidades</span></h2>
+            </div>
+            
+            <div class="unit-container glass-card reveal">
+                <div class="unit-header">
+                    <h3>Unidad 1: Cimentando las Bases</h3>
+                    <p>Un recorrido intensivo de 4 semanas de aprendizaje y práctica.</p>
+                </div>
+                
+                <div class="work-grid">
+                    <div class="work-item glass-card reveal">
+                        <div class="week-tag">Semana 1</div>
+                        <div class="work-info">
+                            <i class="fas fa-box-open card-icon"></i>
+                            <h3>Apache Maven</h3>
+                            <p>Gestión de dependencias y automatización de proyectos Java.</p>
+                            <div class="card-actions">
+                                <a href="#" class="action-btn pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="action-btn canva"><i class="fas fa-palette"></i> Canva</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item glass-card reveal">
+                        <div class="week-tag">Semana 2</div>
+                        <div class="work-info">
+                            <i class="fas fa-cubes card-icon"></i>
+                            <h3>P.O.O.</h3>
+                            <p>Programación Orientada a Objetos: Clases, Objetos y Herencia.</p>
+                            <div class="card-actions">
+                                <a href="#" class="action-btn pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="action-btn canva"><i class="fas fa-palette"></i> Canva</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item glass-card reveal">
+                        <div class="week-tag">Semana 3</div>
+                        <div class="work-info">
+                            <i class="fas fa-bolt card-icon"></i>
+                            <h3>Interactividad</h3>
+                            <p>JavaScript Vanilla y manipulación del DOM.</p>
+                            <div class="card-actions">
+                                <a href="#" class="action-btn pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="action-btn canva"><i class="fas fa-palette"></i> Canva</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-item glass-card reveal">
+                        <div class="week-tag">Semana 4</div>
+                        <div class="work-info">
+                            <i class="fas fa-code-branch card-icon"></i>
+                            <h3>Control de Versiones</h3>
+                            <p>Flujos de trabajo con Git y GitHub.</p>
+                            <div class="card-actions">
+                                <a href="#" class="action-btn pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="action-btn canva"><i class="fas fa-palette"></i> Canva</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Universidad Peruana Los Andes. Facultad de Ingeniería.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
