@@ -1,0 +1,27 @@
+# Walkthrough - Updating Interactive Links (Weeks 1-3)
+
+I have updated the interactive buttons for Weeks 1, 2, and 3 in the `index.html` file as requested.
+
+## Changes Made
+
+### [HTML] [index.html](file:///c:/Users/ADMIN/Desktop/PAGINA%20GREEZKY/index.html)
+
+For **Semana 1**, **Semana 2**, and **Semana 3**:
+- The **Canva** button has been removed.
+- The **Genialy** button now points to the link: `https://view.genially.com/69eeff7b2a18f6cf42d6f68e`.
+
+```html
+<!-- Example of updated Semana 1 -->
+<div class="card-actions">
+    <a href="#" class="action-btn pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+    <a href="#" class="action-btn genialy" data-url="https://view.genially.com/69eeff7b2a18f6cf42d6f68e"><i class="fas fa-wand-magic-sparkles"></i> Genialy</a>
+</div>
+```
+
+## Verification Results
+
+### Manual Verification
+- **Semana 1-3**: Buttons correctly updated. No Canva option present.
+- **Semana 4**: Remained untouched (contains both Canva and Genialy with original links).
+- **Unidad 2**: Remained untouched.
+- **Layout**: Indentation and spacing were fixed to match the original design.
